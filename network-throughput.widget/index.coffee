@@ -1,5 +1,5 @@
 command: """
-    network-throughput.widget/lib/network.sh
+    network-throughput.widget/network.sh
 """
 refreshFrequency: 5000
 
