@@ -149,7 +149,7 @@ style: """
       font-size: #{appearance.baseFontSize * .33}px
 """
 
-command: "$(ps -o comm= $PPID | sed -e 's/UM-LM\^H/Ü/') weather.widget/get-weather \
+command: "$(ps -o comm= $PPID | sed -e 's/UM-LM\^H/Ü/g') weather.widget/get-weather \
                             \"#{options.city}\" \
                             \"#{options.region}\" \
                             #{options.units} \
