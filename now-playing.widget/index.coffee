@@ -6,7 +6,7 @@ options =
   verticalPosition    : "top"        # top | bottom | center
   horizontalPosition    : "left"        # left | right | center
 
-command: "osascript 'now-playing.widget/lib/Get Current Track.applescript'"
+command: "osascript 'now-playing.widget/Get Current Track.applescript'"
 refreshFrequency: '1s'
 style: """
 
@@ -60,7 +60,7 @@ else
     width: @infoHeight
     height: @width
     border-radius @borderRadius
-    background-image: url(now-playing.widget/lib/default.png)
+    background-image: url(now-playing.widget/default.png)
     background-size: cover
     float: left
 
@@ -159,6 +159,6 @@ update: (output, domEl) ->
         artwork.css('background-image', 'url('+tArtwork+')')
       else if tArtwork is 'NA'
         artwork = div.find('.album-art')
-        artwork.css('background-image', 'url(now-playing.widget/lib/default.png)')
+        artwork.css('background-image', 'url(now-playing.widget/default.png)')
   else
     div.hide()
